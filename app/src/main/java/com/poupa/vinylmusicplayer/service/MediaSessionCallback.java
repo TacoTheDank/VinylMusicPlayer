@@ -174,6 +174,7 @@ public final class MediaSessionCallback extends MediaSessionCompat.Callback {
 
     @Override
     public void onStop() {
+        // TODO Isnt it too radical to stop the MusicService?
         musicService.quit();
     }
 
